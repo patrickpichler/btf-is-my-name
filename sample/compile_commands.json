@@ -1,0 +1,58 @@
+[
+  {
+    "arguments": [
+      "/nix/store/wihs0j5ayr55v7nq5slxiiscn12f8kwj-clang-wrapper-15.0.7/bin/clang",
+      "-O2",
+      "-mcpu=v1",
+      "-I./c/headers",
+      "-Wno-address-of-packed-member",
+      "-O2",
+      "-fno-stack-protector",
+      "-D__TARGET_ARCH_arm64",
+      "-Wunused-command-line-argument",
+      "-target",
+      "bpfel",
+      "-c",
+      "-fno-ident",
+      "-fdebug-prefix-map=/Users/patrick/development/talks/btf_is_my_name/sample/c=c",
+      "-fdebug-compilation-dir",
+      ".",
+      "-g",
+      "-D__BPF_TARGET_MISSING=\"GCC error \\\"The eBPF is using target specific macros, please provide -target that is not bpf, bpfel or bpfeb\\\"\"",
+      "-o",
+      "/Users/patrick/development/talks/btf_is_my_name/sample/tracer_arm64_bpfel.o",
+      "/Users/patrick/development/talks/btf_is_my_name/sample/c/sample.bpf.c"
+    ],
+    "directory": "/Users/patrick/development/talks/btf_is_my_name/sample",
+    "file": "/Users/patrick/development/talks/btf_is_my_name/sample/c/sample.bpf.c",
+    "output": "/Users/patrick/development/talks/btf_is_my_name/sample/tracer_arm64_bpfel.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/wihs0j5ayr55v7nq5slxiiscn12f8kwj-clang-wrapper-15.0.7/bin/clang",
+      "-O2",
+      "-mcpu=v1",
+      "-I./c/headers",
+      "-Wno-address-of-packed-member",
+      "-O2",
+      "-fno-stack-protector",
+      "-D__TARGET_ARCH_x86",
+      "-Wunused-command-line-argument",
+      "-target",
+      "bpfel",
+      "-c",
+      "-fno-ident",
+      "-fdebug-prefix-map=/Users/patrick/development/talks/btf_is_my_name/sample/c=c",
+      "-fdebug-compilation-dir",
+      ".",
+      "-g",
+      "-D__BPF_TARGET_MISSING=\"GCC error \\\"The eBPF is using target specific macros, please provide -target that is not bpf, bpfel or bpfeb\\\"\"",
+      "-o",
+      "/Users/patrick/development/talks/btf_is_my_name/sample/tracer_x86_bpfel.o",
+      "/Users/patrick/development/talks/btf_is_my_name/sample/c/sample.bpf.c"
+    ],
+    "directory": "/Users/patrick/development/talks/btf_is_my_name/sample",
+    "file": "/Users/patrick/development/talks/btf_is_my_name/sample/c/sample.bpf.c",
+    "output": "/Users/patrick/development/talks/btf_is_my_name/sample/tracer_x86_bpfel.o"
+  }
+]
