@@ -239,7 +239,7 @@ image: /dive_in.jpg
 </div>
 
 <!--
-* BTF is always represented as data blob
+`
 -->
 
 ---
@@ -299,6 +299,9 @@ layout: image
 image: /btf_strings.excalidraw.svg
 backgroundSize: contain
 ---
+
+
+<Arrow x1="410" y1="155" x2="510" y2="155" color="red" />
 
 <!--
 * first value in the string section must be a NULL string, which means it has a length of 0
@@ -1377,7 +1380,7 @@ backgroundSize: contain
 * if it does match, there is light at the end of the tunnel
 * we can plug the `btf_id` we got into the `BTF_GET_FD_BY_ID` cmd
 * this retrieves the corresponding FD for the ID
-* we can then call `BPF_OBJ_GET_INFO_BY_ID` again with the BTF FD
+* we can then call `BPF_OBJ_GET_INFO_BY_FD` again with the BTF FD
 -->
 
 ---
@@ -2407,7 +2410,7 @@ if(bpf_core_field_exists(t->__state)) {
 ```
 
 <!--
-* there will be three CO-RE relocations happneing
+* there will be three CO-RE relocations happening
 * one for testing if the field exists and the other two reading the corresponding fields
 * this begs the questions, what does the loader do if we want to read an non existing field
 * the answer is pretty interesting
